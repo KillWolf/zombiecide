@@ -1,13 +1,13 @@
 import React from 'react';
-import Navbar from './navbar/Navbar'
-import BoardList from './boardList/BoardList'
+import Navbar from '../navbar/Navbar'
+import MainRouter from '../mainRouter/MainRouter'
 import './App.css';
 
 function App() {
   return (
     <div>
       <Navbar />
-      <BoardList /> 
+      <MainRouter />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-import './SingleBoard.css'
+import './SingleBoardCard.css'
 
-function SingleBoard(props) {
+function SingleBoardCard(props) {
     return (
         <div className="singleCard">
             <img src={props.boardImg} alt="" width="300" />
@@ -13,4 +13,4 @@ function SingleBoard(props) {
     );
 }
 
-export default SingleBoard;
+export default SingleBoardCard;

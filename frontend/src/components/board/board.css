@@ -1,0 +1,23 @@
+.boardContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    max-width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px #BDBDBD solid;
+}
+
+.board {
+    margin: 1rem;
+    border-radius: 0.5rem;
+}

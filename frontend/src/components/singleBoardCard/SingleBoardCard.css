@@ -1,11 +1,14 @@
 .singleCard {
     margin: 0 1rem 1rem 1rem;
     background-color: ghostwhite;
-    border-color: #e3e3e3;
+    border: 1px #BDBDBD solid;
+    max-width: 300px;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .cardText {
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .cardText h2 {
