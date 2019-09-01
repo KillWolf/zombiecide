@@ -1,0 +1,14 @@
+.singleCard {
+    margin: 0 1rem 1rem 1rem;
+    background-color: ghostwhite;
+    border-color: #e3e3e3;
+}
+
+.cardText {
+    padding: 1rem;
+}
+
+.cardText h2 {
+    margin-top: 0;
+}
+
