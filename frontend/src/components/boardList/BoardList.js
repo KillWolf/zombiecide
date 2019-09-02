@@ -10,6 +10,7 @@ function BoardList() {
     return (
         <div className="pageContainer">
             <div className="cardContainer">
+            {/* INDEX IS NOT IDEAL, USE BOARD ID TO TRACK LIST */}
                 {BoardsApi.all().map((board, index) => (
                     <Link to={`/board/${board.boardId}`} key={index}>
                         < SingleBoardCard boardName={board.boardName} boardImg={board.boardImg} boardDesc={board.boardDesc} />
