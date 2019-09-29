@@ -13,6 +13,10 @@ const BoardsAPI = {
     get: function(id) {
       const isBoard = p => p.boardId === id
       return this.boards.find(isBoard)
+    },
+    update: function(boardId, text) {
+      const foundIndex = this.boards.findIndex(board => board.boardId === boardId)
+      this.boards[foundIndex].boardDesc = text;
     }
   }
   

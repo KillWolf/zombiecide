@@ -11,7 +11,7 @@
     padding: 1rem;
     margin: 1rem;
     border-radius: 0.5rem;
-    max-width: 300px;
+    width: 300px;
     height: 400px;
     background-color: white;
     border: 1px #BDBDBD solid;
@@ -20,4 +20,22 @@
 .board {
     margin: 1rem;
     border-radius: 0.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editButton {
+    padding: 0.25rem 0.75rem;
+    background-color: black;
+    border-radius: 50px;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: lightslategray;
+    cursor: pointer;
 }
