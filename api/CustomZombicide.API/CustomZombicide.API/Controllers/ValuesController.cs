@@ -1,8 +1,7 @@
-﻿using System;
+﻿using CustomZombicide.API.Models;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
 namespace CustomZombicide.API.Controllers
 {
@@ -10,36 +9,36 @@ namespace CustomZombicide.API.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        // GET api/values
+        private ZombicideContext _db = new ZombicideContext();
+
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Board>> Get()
         {
-            return new string[] { "value1", "value2" };
+            var boards = _db.Board.ToList();
+            if (boards.Count == 0)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return boards;
+            }
         }
 
-        // GET api/values/5
-        [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        [HttpGet]
+        public ActionResult<Board> GetBoardTileByBoardId(int id)
         {
-            return "value";
-        }
-
-        // POST api/values
-        [HttpPost]
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
+            var board = _db.Board.FirstOrDefault(b => b.BoardId == id);
+            if (board == null)
+            {
+                return NotFound();
+            }
+            else
+            {
+                return board;
+            }
+            //also return tiles?
+            //return a BoardTile instead?
         }
     }
 }

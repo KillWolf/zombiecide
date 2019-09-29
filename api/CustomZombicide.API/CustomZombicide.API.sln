@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29215.179
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomZombicide.API", "CustomZombicide.API\CustomZombicide.API.csproj", "{0B130ECF-3EFA-4112-8EDB-261F360F9D7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomZombicide.API", "CustomZombicide.API\CustomZombicide.API.csproj", "{F48A9FF9-E7D0-407A-9230-0F68B9E302BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0B130ECF-3EFA-4112-8EDB-261F360F9D7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0B130ECF-3EFA-4112-8EDB-261F360F9D7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0B130ECF-3EFA-4112-8EDB-261F360F9D7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0B130ECF-3EFA-4112-8EDB-261F360F9D7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F48A9FF9-E7D0-407A-9230-0F68B9E302BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F48A9FF9-E7D0-407A-9230-0F68B9E302BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F48A9FF9-E7D0-407A-9230-0F68B9E302BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F48A9FF9-E7D0-407A-9230-0F68B9E302BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {7B8A6644-1F2A-49DB-99C9-777CFD8595CE}
+		SolutionGuid = {8D536130-2D5C-4EB5-A721-DF2A31B646FF}
 	EndGlobalSection
 EndGlobal
